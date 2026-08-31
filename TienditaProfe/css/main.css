@@ -1,0 +1,65 @@
+header{
+    background-color: rgb(219, 224, 145);
+    /*hola soy un comentario Maria*/
+}
+
+header h1{
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 60px; 
+    padding: 10px; 
+    color: rgb(6, 54, 50);
+}
+
+#formContacto{
+    max-width: 720px;
+}
+
+#aboutUs{
+    /* si paso dos valores al padding o al margin, el primero afecta al eje y; el segundo al eje x*/
+    padding: 12px 20px;
+    border-style: dashed;
+    margin-top: 14px;
+    border-color: rgba(231, 241, 241, 0.116);
+    border-radius: 12px;
+    text-align: center;
+}
+#productos{
+    display: grid;
+    grid-template-columns: 1fr ;
+    /*background-color: aqua;*/
+    width: 95%;
+    margin: 20px auto;
+
+}
+
+.card-producto{
+    max-width: 250px;
+    text-align: center;
+    background-color: azure;
+    border-style: groove;
+    border-width: 3px;
+    border-color: rgba(0, 255, 255, 0.144);
+    border-radius: 20px;
+    margin: 10px auto;
+
+}
+.card-producto img{
+    width: 200px;
+    padding: 5px;
+}
+
+@media (min-width:720px){
+    #productos{
+         grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media (min-width:1024px){
+    #productos{
+         grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
+
+
