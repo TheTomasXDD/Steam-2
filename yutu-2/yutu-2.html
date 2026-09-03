@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube 2</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+  <!-- Barra de navegación superior -->
+  <header class="navbar">
+    <div class="nav-left">
+      <button class="icon-btn menu-btn">☰</button>
+      <div class="logo">
+        <span class="yt-red">▶</span>
+        <span class="yt-text">YouTube</span>
+      </div>
+    </div>
+
+    <div class="nav-center">
+      <form class="search-form">
+        <input type="text" placeholder="Buscar" class="search-input">
+        <button type="submit" class="search-btn">🔍</button>a>
+
+        </button>
+      </form>
+      <button class="icon-btn mic-btn">🎙️</button>
+    </div>
+
+    <div class="nav-right">
+      <button class="icon-btn">➕</button>
+      <button class="icon-btn">🔔</button>
+      <div class="user-avatar">
+        <img src="https://via.placeholder.com/32" alt="Foto de perfil">
+      </div>
+    </div>
+  </header>
+
+  <!-- Contenedor principal -->
+  <div class="main-container">
+
+    <!-- Barra lateral izquierda -->
+    <aside class="sidebar">
+      <nav class="sidebar-links">
+        <a href="#" class="sidebar-item active">🏠 <span>Inicio</span></a>
+        <a href="#" class="sidebar-item">🎬 <span>Shorts</span></a>
+        <a href="#" class="sidebar-item">📺 <span>Suscripciones</span></a>
+        <hr>
+        <a href="#" class="sidebar-item">📚 <span>Biblioteca</span></a>
+        <a href="#" class="sidebar-item">🕒 <span>Historial</span></a>
+        <a href="#" class="sidebar-item">👍 <span>Videos gustados</span></a>
+      </nav>
+    </aside>
+
+    <!-- Área del contenido principal -->
+    <main class="content-area">
+
+      <!-- Filtros de categorías -->
+      <div class="categories-bar">
+        <button class="chip active">Todos</button>
+        <button class="chip">Música</button>
+        <button class="chip">Videojuegos</button>
+        <button class="chip">Programación</button>
+        <button class="chip">En vivo</button>
+        <button class="chip">Noticias</button>
+      </div>
+
+      <section class="video-grid">
+
+        <!-- Tarjeta de Video 1 -->
+        <article class="video-card">
+          <a href="https://www.youtube.com/watch?v=Ck0PEGCGiVI" target="_blank" class="video-link">
+            <div class="thumbnail-wrapper">
+              <!-- Miniatura real de YouTube -->
+              <img src="https://i.ytimg.com/vi/Ck0PEGCGiVI/hqdefault.jpg" alt="Miniatura del video" class="thumbnail">
+              <span class="duration">14:34</span>
+            </div>
+            <div class="video-details">
+              <img src="https://via.placeholder.com/36" alt="Avatar del canal" class="channel-avatar">
+              <div class="video-info">
+                <h3 class="video-title">Llegando a platino(no se llegó)</h3>
+                <p class="channel-name">NirohYT</p>
+                <p class="video-stats">1 mil vistas • hace 2 días</p>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- Tarjeta de Video 2 -->
+        <article class="video-card">
+          <a href="https://www.youtube.com/watch?v=jfKfPfyJRdk" target="_blank" class="video-link">
+            <div class="thumbnail-wrapper">
+              <!-- Miniatura real de YouTube -->
+              <img src="https://i.ytimg.com/vi/jfKfPfyJRdk/hqdefault.jpg" alt="Miniatura del video" class="thumbnail">
+              <span class="duration">08:15</span>
+            </div>
+            <div class="video-details">
+              <img src="https://via.placeholder.com/36" alt="Avatar del canal" class="channel-avatar">
+              <div class="video-info">
+                <h3 class="video-title">Las mejores canciones para concentrarse y trabajar</h3>
+                <p class="channel-name">Lofi Beats</p>
+                <p class="video-stats">450 mil vistas • hace 1 mes</p>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- Tarjeta de Video 3 -->
+        <article class="video-card">
+          <a href="https://youtu.be/Efioj3SjlRc" target="_blank" class="video-link">
+            <div class="thumbnail-wrapper">
+              <!-- Miniatura real de YouTube -->
+              <img src="https://i.ytimg.com/vi/Efioj3SjlRc/hqdefault.jpg" alt="Miniatura del video" class="thumbnail">
+              <span class="duration">10:31</span>
+            </div>
+            <div class="video-details">
+              <img src="https://via.placeholder.com/36" alt="Avatar del canal" class="channel-avatar">
+              <div class="video-info">
+                <h3 class="video-title">Carreando 2 NPCS</h3>
+                <p class="channel-name">cdag 2007</p>
+                <p class="video-stats">4 vistas • hace 15 horas</p>
+              </div>
+            </div>
+          </a>
+        </article>
+
+      </section>
+    </main>
+
+  </div>
+
+</body>
+</html>

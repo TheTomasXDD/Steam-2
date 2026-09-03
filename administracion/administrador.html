@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creator Studio - Administrador YouTube 2</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <div class="admin-container">
+        <!-- MENÚ VERTICAL EXIGIDO POR LA PAUTA -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>Creator Studio</h2>
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="#" class="active">📊 Dashboard</a></li>
+                <li><a href="#">🎬 Mis Videos (Mantenedor)</a></li>
+                <li><a href="#">👥 Usuarios</a></li>
+                <li><a href="#">⚙️ Configuración</a></li>
+                <li><a href="index.html">🚪 Volver a la Tienda</a></li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+            <header class="content-header">
+                <h1>Subir Nuevo Video / Curso</h1>
+                <p>Formulario de registro y configuración de contenido.</p>
+            </header>
+
+            <section class="form-container">
+                <!-- El ID sirve para enlazar el evento en JavaScript -->
+                <form id="videoForm" novalidate>
+                    
+                    <div class="form-group">
+                        <label for="videoCode">Código del Video (Requerido, mín. 3 caracteres):</label>
+                        <input type="text" id="videoCode" placeholder="Ej: JS-001">
+                        <span class="error-message" id="error-code"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="videoTitle">Título del Video (Requerido, máx. 100 caracteres):</label>
+                        <input type="text" id="videoTitle" placeholder="Ej: Tutorial de HTML5 desde Cero">
+                        <span class="error-message" id="error-title"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="videoDesc">Descripción (Opcional, máx. 500 caracteres):</label>
+                        <textarea id="videoDesc" rows="4" placeholder="Escribe los detalles del video..."></textarea>
+                        <span class="error-message" id="error-desc"></span>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="videoPrice">Precio de Acceso ($0 = Gratis):</label>
+                            <input type="number" id="videoPrice" step="0.01" value="0">
+                            <span class="error-message" id="error-price"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="videoStock">Visualizaciones / Cupos Máximos:</label>
+                            <input type="number" id="videoStock" value="100">
+                            <span class="error-message" id="error-stock"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="videoCritical">Alerta Crítica (Opcional):</label>
+                            <input type="number" id="videoCritical" placeholder="Ej: 5 cupos restantes">
+                            <span class="error-message" id="error-critical"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="videoCategory">Categoría (Requerido):</label>
+                            <select id="videoCategory">
+                                <option value="">-- Selecciona una opción --</option>
+                                <option value="programacion">Programación & Tech</option>
+                                <option value="musica">Música</option>
+                                <option value="gaming">Gaming</option>
+                                <option value="diseno">Diseño Gráfico</option>
+                            </select>
+                            <span class="error-message" id="error-category"></span>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-submit">🚀 Publicar Video</button>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <!-- Vinculación de la lógica JS -->
+    <script src="js/admin-validation.js"></script>
+</body>
+</html>

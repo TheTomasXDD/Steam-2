@@ -1,0 +1,33 @@
+login-form {
+    width: 400px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 100%;
+    box-sizing: border-box;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.login-form h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 20px;
+    display: block;
+    width: 100%;
+    margin-left: auto;
+}
