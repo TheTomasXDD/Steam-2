@@ -135,6 +135,23 @@ body {
   gap: 8px;
 }
 
+.admin-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  font-size: 1rem;
+  transition: background-color 0.2s ease;
+}
+
+.admin-link:hover {
+  background-color: var(--bg-hover);
+}
+
 .user-avatar img, .channel-avatar {
   width: 32px;
   height: 32px;

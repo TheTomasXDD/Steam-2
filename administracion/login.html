@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="admin-body">
+    <div class="register-shell">
+        <div class="register-card">
+            <div class="register-header">
+                <span class="brand-badge">YT2</span>
+                <h1>Iniciar sesión</h1>
+                <p>Accede con tu usuario o correo</p>
+            </div>
+
+            <form id="login-form" novalidate>
+                <div class="input-group">
+                    <label for="login-identifier">Usuario o correo</label>
+                    <input type="text" id="login-identifier" name="login-identifier" placeholder="usuario123 o correo@ejemplo.com" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="login-password">Contraseña</label>
+                    <input type="password" id="login-password" name="login-password" required>
+                </div>
+
+                <div id="login-message" class="form-message" aria-live="polite"></div>
+
+                <div class="button-row">
+                    <button type="submit" class="primary-btn">Entrar</button>
+                    <a href="administrador.html" class="secondary-btn link-button">Registrarse</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="tactil.js"></script>
+</body>
+</html>
